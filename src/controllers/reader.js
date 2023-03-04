@@ -11,7 +11,7 @@ exports.createReader = async (req, res) => {
   res.status(201).json(newReader);
 }; 
 
-exports.readReader = async (req, res) => {
-  const readReader = await Reader.readReader(req.params.id);
-  res.status(200).json(readReader);  
+exports.findAllReaders = async (req, res) => {
+  const readers = await Reader.findAll(req.params.id);
+  res.status(200).json(readers);  
 };

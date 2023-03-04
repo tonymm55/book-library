@@ -47,7 +47,7 @@ describe('/readers', () => {
     });
 
     describe('GET /readers', () => {
-      xit('gets all readers records', async () => {
+      it('gets all readers records', async () => {
         const response = await request(app).get('/readers');
 
         expect(response.status).to.equal(200);
