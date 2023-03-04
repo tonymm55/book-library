@@ -7,5 +7,6 @@ const controllers = require('../controllers/reader');
 
 
 router.post('/readers', controllers.createReader);
+router.get("/readers", controllers.readReader);
 
 module.exports = router;  

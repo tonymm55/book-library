@@ -1,13 +1,13 @@
 /* src/models/reader.js */
-module.exports = (connection, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const schema = {
       name: DataTypes.STRING,
       email: DataTypes.STRING,
       password: DataTypes.STRING
     };
   
-    const ReaderModel = connection.define('Reader', schema);
-    return ReaderModel;
+    return sequelize.define('Reader', schema);
+  
   };
 
 

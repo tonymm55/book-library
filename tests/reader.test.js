@@ -20,7 +20,7 @@ describe('/readers', () => {
           password: '12345678'
         });
         const newReaderRecord = await Reader.findByPk(response.body.id, {
-          raw: true
+          raw: true,
         });
 
         expect(response.status).to.equal(201);
