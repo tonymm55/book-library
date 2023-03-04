@@ -1,6 +1,6 @@
 # credentials
-*.env
-*.env.test
+.env
+.env.test
 
 # Logs
 logs

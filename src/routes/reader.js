@@ -2,10 +2,10 @@
 const express = require('express');
 const router = express.Router();
 
-const readerController = require('../controllers/reader');
+const controllers = require('../controllers/reader');
 
 
 
-router.post('/', readerController.createReader);
+router.post('/readers', controllers.createReader);
 
 module.exports = router;  

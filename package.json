@@ -1,14 +1,14 @@
 {
   "name": "book-library",
   "version": "1.0.0",
-  "description": "Command Shift Project - Database",
+  "description": "Command Shift Project - Book Library Database",
   "main": "index.js",
   "scripts": {
-    "pretest": "node scripts/create-database.js test",
-    "test": "mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js",
     "prestart": "node scripts/create-database.js",
     "start": "nodemon -r dotenv/config index.js",
-    "posttest": "node scripts/drop-database.js"
+    "pretest": "node scripts/create-database.js test",
+    "test": "mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js",
+    "posttest": "node scripts/drop-database.js test"
   },
   "repository": {
     "type": "git",
