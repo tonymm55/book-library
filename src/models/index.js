@@ -1,3 +1,5 @@
+//Sequelize setup code
+
 const Sequelize = require('sequelize');
 const ReaderModel = require('./reader');
 const BookModel = require('./book'); 

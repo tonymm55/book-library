@@ -1,18 +1,9 @@
 const express = require('express');
-
 const app = express();
-
-app.use(express.json());
-
 const readerRouter = require('./routes/reader');
 
-
-
-
+app.use(express.json());
 app.use(readerRouter); //route handler
-
-
-
 
 module.exports = app; 
 
