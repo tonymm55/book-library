@@ -81,7 +81,7 @@ describe('/readers', () => {
     });
 
     describe('PATCH /readers/:id', () => {
-      xit('updates readers email by id', async () => {
+      it('updates readers email by id', async () => {
         const reader = readers[0];
         const response = await request(app)
           .patch(`/readers/${reader.id}`)
